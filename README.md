@@ -1,6 +1,6 @@
 # what is this
 
-this is char counter react app for my homepage
+this is char counter react app for my homepage.
 this is a forked repogitory from [Char-Counter](https://github.com/RUNFUNRUN/Char-Counter)
 
 thanks for my friend [RUNFUNRUN](https://github.com/RUNFUNRUN)

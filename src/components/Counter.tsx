@@ -1,13 +1,13 @@
 import '../App.css';
 import React, { useState, useEffect } from 'react';
 
-export function Counter() {
+const Counter: React.FC = () => {
     const [text, setText] = useState('');
     const [count, setCount] = useState(text.length);
     const [noNewlineCount, setNoNewlineCount] = useState(text.length);
     const [simpleCount, setSimpleCount] = useState(text.length);
 
-    const handleCountChange = (e) => {
+    const handleCountChange = (e: any) => {
         setText(e.target.value);
     };
 
@@ -37,11 +37,13 @@ export function Counter() {
                 <p>改行・句読点・空白を除いた文字数 : {simpleCount}</p>
             </div>
             <textarea
-                rows="20"
-                cols="80"
+                rows={20}
+                cols={80}
                 value={text}
                 onChange={handleCountChange}
             />
         </div>
     );
-}
+};
+
+export default Counter;

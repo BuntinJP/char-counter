@@ -1,14 +1,15 @@
+import React from 'react';
 import './App.css';
-import { Head } from './components/Head';
-import { Counter } from './components/Counter';
+import Head from './components/Head';
+import Counter from './components/Counter';
 
-function App() {
+const App: React.FC = () => {
     return (
         <div className="App">
             <Head />
             <Counter />
         </div>
     );
-}
+};
 
 export default App;
